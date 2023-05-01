@@ -246,10 +246,10 @@ public class Animovanefilmy {
 	    }
 	}
 	
-	public static void HerecvJednomFilme (String jmeno) {
+	public static void HerecvJednomFilme (String meno) {
         try {
 			for (Film film : filmMap.values()) {					
-			    if (film.getZoznamHercov().contains(jmeno)) {
+			    if (film.getZoznamHercov().contains(meno)) {
 			        System.out.println(film.getMeno());
 			    }
 			}
