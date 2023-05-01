@@ -159,15 +159,15 @@ public class Animovanefilmy {
 	        System.out.print("Zadaj svoj výber: ");
 
 	        int choice = scanner.nextInt();
-	        scanner.nextLine(); // consume the newline character
+	        scanner.nextLine(); 
 
 	        switch (choice) {
 	            case 1:
 	                System.out.print("Nové meno: ");
 	                String newMeno = scanner.nextLine();
 	                film.setMeno(newMeno);
-	                filmMap.remove(meno); // remove old entry
-	                filmMap.put(newMeno, film); // add updated entry
+	                filmMap.remove(meno); 
+	                filmMap.put(newMeno, film); 
 	                return "Vytvoril si nové meno.\n" + film.toString();
 	            case 2:
 	                System.out.print("Zadaj režiséra: ");
